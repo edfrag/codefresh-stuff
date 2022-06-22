@@ -15,7 +15,7 @@ provider "codefresh" {
 terraform {
   backend "s3" {
     bucket = "terraformstufff"
-    key    = "terraform/codefresh-inception-state-us-east-2"
+    key    = "codefresh/codefresh-inception-state-us-east-2"
     region = "ap-southeast-2"
   }
 }
