@@ -11,6 +11,15 @@ provider "codefresh" {
   api_url = "https://g.codefresh.io/api" # Default value - https://g.codefresh.io/api
 }
 
+resource "codefresh_project" "test" {
+    name = "myproject2022"
+
+    tags = [
+      "production",
+      "docker",
+    ]
+}
+
 terraform {
   backend "s3" {
     bucket = "terraformstufff"
