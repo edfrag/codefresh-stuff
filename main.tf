@@ -1,10 +1,8 @@
 terraform {
   required_providers {
     codefresh = {
-      version = "0.1.0"
       source = "codefresh.io/app/codefresh"
-##	source = "codefresh.io/app/codefresh/0.1.0/linux_amd64"
-##	source = "codefresh.io/app/codefresh/0.1.0/darwin_amd64"
+      version = "0.1.0"
     }
   }
 }
@@ -16,7 +14,7 @@ provider "codefresh" {
 terraform {
   backend "s3" {
     bucket = "terraformstufff"
-    key    = "codefresh/codefresh-inception-state-us-east-2"
+    key    = "codefresh2/codefresh-inception-state-us-east-2"
     region = "ap-southeast-2"
   }
 }
